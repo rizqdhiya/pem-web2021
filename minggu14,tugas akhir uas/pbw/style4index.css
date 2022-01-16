@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-image: url(img/bgfull.jpg);
+    background-size: 100%;
+}
+.header{
+    background-image: url(img/bgheader.jpg);
+    background-size: cover;
+    background-position-y: 600px;
+    padding: 30px;
+    text-align: center;
+    color: #ddd;
+    text-shadow: 2px 2px 5px red;
+}
+
+.nav{
+    overflow: hidden;
+    background-image: url(img/bgnavtest.jpg);
+    background-size: 100%;
+    background-position-y: 310px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.nav a{   
+    font-family: sans-serif;
+    float: left;
+   display: block;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+.nav a:hover{
+    background-color: rgb(75, 111, 231);
+    color: rgb(0, 0, 0);
+}
+
+img {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+h2 {
+    margin-bottom: .5em;
+    text-align: center;
+  }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+.produk-listing {
+    position: relative;
+    
+  }
+  
+.produk-image {
+    line-height: 0;
+    overflow: hidden;
+  
+  }
+  
+.produk-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+    
+  }
+  
+.produk-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90,0,10,0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+.produk-listing:hover .produk-title {
+    opacity: 1;
+  }
+  
+.produk-listing:hover .produk-image img {
+    filter: blur(2px);
+  }
+@media (hover: none) { 
+.produk-title {
+      opacity: 1;
+    }
+.produk-image img {
+      filter: blur(2px);
+    }
+  }
+.namaproduk{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 5px blue;
+}
+
+/* 111111111111111111 */
+.kaki{
+  font-size: big;
+  overflow: hidden;
+  background-color: aqua;
+  bottom:0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;    
+}
+.jam{
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}

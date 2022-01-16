@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joki Game</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial scale=1">
+        <link rel="stylesheet" type="text/css" href="order.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="header">
+            <h1>-We are Joki-</h1>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="order.html">Daftar Menjadi Joki</a> 
+            <a href="buku_tamu.php">Buku Tamu</a>
+                <br>
+        </div>
+        <br><br>
+        <div class="about">
+          <form>
+            Nama Lengkap<br>
+            <input type="text" name="nama_lengkap" size="55"><br><br>
+            Jenis Kelammin:<br>
+            Laki-Laki <input type="radio" name="jenis_kelamin" value="L"> <br>
+            Perempuan <input type="radio" name="jenis_kelamin" value="P">
+            <br><br>
+            Alamat Tinggal Lengkap<br>
+            <input type="text" name="almat_tinggal" size="55"><br><br>
+            Email<br>
+            <input type="text" name="email" size="55"><br><br>
+            Nomer Hp <br>
+            <input type="number" name="nomer" size="55"><br><br>
+            Nomor KTP <br>
+            <input type="number" name="barang" size="55"><br><br>
+            Pembayaranmu melalui :<br>
+            <select name="info">
+                <option selected="select">-=Pilih=-</option>
+                <option value="Gopay">Gopay</option>
+                <option value="Dana">Dana</option>
+                <option value="Bank">Bank Transfer</option>
+                <option value="BTC">ETH</option>
+                <option value="BTC">BTC</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Batal">
+        </form>
+        </div>
+  
+          <br><br><br>
+                     
+        <script type="text/javascript">
+            var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+            var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth();
+            var thisDay = date.getDay(),
+                thisDay = myDays[thisDay];
+            var yy = date.getYear();
+            var year = (yy < 1000) ? yy + 1900 : yy;
+            document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+         </script>
+
+          
+<!-- Footer -->
+    <footer class="kaki">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="#"> Rizq Dhiya Ulhaq</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    </body>
+</html>

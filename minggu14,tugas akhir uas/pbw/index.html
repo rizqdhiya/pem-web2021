@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joki Game</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial scale=1">
+        <link rel="stylesheet" type="text/css" href="style4index.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="header">
+            <h1>We are Joki</h1>
+        </div>
+        <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About</a>
+                <a href="order.html">Daftar Menjadi Joki</a> 
+                <a href="buku_tamu.php">Buku Tamu</a>
+                <br>
+        </div>
+        </div>
+        <div class="namaproduk">
+            <h2>Game List</h2>
+            <br>
+            <div class="grid-container">
+              <article id="3685" class="produk-listing">
+                <a class="produk-title" href="#">Pubg Mobile</a>
+                <div class="produk-image">
+                  <a href="#">
+                      <img width="300" height="169" src="img/pubg.jpg" alt="pubgm"></a>
+                </div>
+              </article>
+              <article id="3688" class="produk-listing">
+                <a class="produk-title" href="#">Mobile Legends</a>
+                <div class="produk-image">
+                  <a href="#">
+                      <img width="300" height="169" src="img/mlbbf.jpg" alt="mlbb">  </a>
+                </div>
+              </article>
+              <article id="3691" class="produk-listing">
+                <a class="produk-title" href="#">Valorant</a>
+                <div class="produk-image">
+                  <a href="#">
+                      <img width="300" height="169" src="img/valo.jpg" alt="valorant">  </a>
+                </div>
+              </article>
+              <article id="3694" class="produk-listing">
+                <a class="produk-title" href="#">Genshin Impact</a>
+                <div class="produk-image">
+                  <a href="#">
+                      <img width="300" height="169" src="img/gi.jpg" alt="genshinimpact">  </a>
+                </div>
+            </div>
+          </div>
+          <br><br>
+          <div class="jam"> <h1>Sekarang adalah Jam :</h1> 
+            <h1 style="font-size: 120px; font-family: arial;" id="jam"></h1></div>
+           
+        <script type="text/javascript">
+          window.onload = function() { jam(); }
+         
+          function jam() {
+           var e = document.getElementById('jam'),
+           d = new Date(), h, m, s;
+           h = d.getHours();
+           m = set(d.getMinutes());
+           s = set(d.getSeconds());
+         
+           e.innerHTML = h +':'+ m +':'+ s;
+         
+           setTimeout('jam()', 1000);
+          }
+         
+          function set(e) {
+           e = e < 10 ? '0'+ e : e;
+           return e;
+          }
+          
+         </script>
+
+
+<!-- Footer -->
+    <footer class="kaki">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="#"> Rizq Dhiya Ulhaq</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    </body>
+</html>
